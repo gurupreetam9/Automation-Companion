@@ -1,0 +1,80 @@
+# ============================================================
+#                 CODEOWNERS TEMPLATE (COMMENTED)
+#  This file defines who automatically reviews which folders.
+#  It is **optional** and you can enable it later.
+#  GitHub will NOT use any line that starts with '#'.
+# ============================================================
+
+# ------------------------------------------------------------
+#  GLOBAL OWNERSHIP (OPTIONAL)
+#  This assigns a default owner for the entire repository.
+#  Uncomment if needed later.
+# ------------------------------------------------------------
+# * @guru
+
+# ------------------------------------------------------------
+#  UI Layer Ownership
+#  All UI code (screens, components, navigation)
+#  Multiple owners allowed
+# ------------------------------------------------------------
+# app/src/main/java/com/example/automationcompanion/ui/ @guru @teammate1
+
+# ------------------------------------------------------------
+#  Feature Ownership
+#  Each feature folder can have 1 or more owners.
+#  Uncomment when ready to assign.
+# ------------------------------------------------------------
+
+# Gesture Recording & Playback
+# features/gesture_recording_playback/ @guru @teammateA
+
+# Dynamic UI Path Recording
+# features/dynamic_ui_path_recording/ @teammateA @guru
+
+# Screen Understanding ML
+# features/screen_understanding_using_on_device_ml/ @teammateB
+
+# Semantic Automation
+# features/semantic_automation/ @teammateC @guru
+
+# Conditional Macros
+# features/conditional_macros/ @guru @teammateB
+
+# Multi-Step Multi-App Pipeline
+# features/multi_step_multi_app_pipeline/ @teammateA @guru
+
+# App-Specific Automation
+# features/app_specific_automation/ @teammateC
+
+# System Context Automation
+# features/system_context_automation/ @teammateB @guru
+
+# Emergency Trigger
+# features/emergency_trigger/ @guru @teammateC
+
+# Cross Device Automation
+# features/cross_device_automation/ @guru
+
+# Automation Debugger
+# features/automation_debugger/ @teammateA
+
+# Automation Profile / Learning
+# features/automation_profile/ @guru @teammateB
+
+# ------------------------------------------------------------
+#  Docs Ownership — whoever maintains documentation
+# ------------------------------------------------------------
+# docs/ @guru
+
+# Markdown files (README, MD docs)
+# *.md @guru
+
+# ------------------------------------------------------------
+#  Build/Config Ownership
+# ------------------------------------------------------------
+# .github/ @guru
+# app/build.gradle.kts @guru
+# gradle/ @guru
+
+# End of CODEOWNERS template
+# ============================================================

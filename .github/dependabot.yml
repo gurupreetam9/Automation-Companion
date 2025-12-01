@@ -1,0 +1,14 @@
+version: 2
+updates:
+  # Check Gradle dependencies (Android + Kotlin) weekly
+  - package-ecosystem: "gradle"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 5
+
+  # Optional: GitHub Actions version updates
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
