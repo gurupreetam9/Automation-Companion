@@ -5,6 +5,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.example.automationcompanion.features.PlaceholderScreen
+import com.example.automationcompanion.features.system_context_automation.location.SystemContextMainScreen
 
 
 private const val ROUTE_HOME = "home"
@@ -18,6 +19,7 @@ object Routes {
     const val MULTI_APP = "feature/multi_app_workflow_pipeline"
     const val APP_SPECIFIC = "feature/app_specific_automation"
     const val SYSTEM_CONTEXT = "feature/system_context_automation"
+    const val LOCATION_AUTOMATION = "feature/system_context/location"
     const val EMERGENCY = "feature/emergency_trigger"
     const val DEBUGGER = "feature/automation_debugger"
     const val CROSS_DEVICE = "feature/cross_device_automation"
@@ -117,14 +119,21 @@ fun AppNavHost() {
         }
 
         composable(Routes.SYSTEM_CONTEXT) {
-            PlaceholderScreen(
-                title = "System Context Automation",
-                todos = listOf(
-                    "Location/time/battery/WIFI triggers",
-                    "Settings Panel & permission flows",
-                    "Fallbacks when services are disabled"
-                ),
-                onBack = {navController.popBackStack()}
+//            PlaceholderScreen(
+//                title = "System Context Automation",
+//                todos = listOf(
+//                    "Location/time/battery/WIFI triggers",
+//                    "Settings Panel & permission flows",
+//                    "Fallbacks when services are disabled"
+//                ),
+//                onBack = {navController.popBackStack()}
+//            )
+
+            SystemContextMainScreen(
+                onBack = {navController.popBackStack()},
+//                onLocationAutomationClick = {
+//                    navController.navigate(Routes.LOCATION_AUTOMATION)
+//                }
             )
         }
 
