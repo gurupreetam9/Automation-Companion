@@ -2,6 +2,7 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.compose.compiler)
+    kotlin("kapt")
 }
 
 android {
@@ -58,6 +59,7 @@ android {
 }
 
 dependencies {
+    implementation(platform("androidx.compose:compose-bom:2024.01.00"))
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
@@ -75,7 +77,21 @@ dependencies {
 
     // Optional: helpful tooling for preview and debug
     debugImplementation(libs.androidx.ui.tooling)
-    debugImplementation(libs.androidx.ui.tooling.preview)
+
+    //Location Based Trigger
+    implementation(libs.play.services.location)
+    implementation(libs.androidx.biometric)
+    implementation(libs.osmdroid.android)
+    implementation(libs.androidx.preference)
+    implementation(libs.osmdroid.android)
+    implementation(libs.osmdroid.mapsforge)
+    implementation(libs.mapsforge.map.android)
+    implementation(libs.mapsforge.map.reader)
+    implementation(libs.mapsforge.themes)
+    implementation(libs.androidx.room.runtime)
+    implementation(libs.androidx.room.ktx)
+    kapt(libs.androidx.room.compiler)
+    implementation(libs.compose.icons)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)

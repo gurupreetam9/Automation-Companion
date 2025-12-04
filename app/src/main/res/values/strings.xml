@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Automation Companion</string>
+    <string name="accessibility_desc">Accessibility helper for automated quick-settings interaction to toggle Location for scheduled automations.</string>
+
 </resources>
