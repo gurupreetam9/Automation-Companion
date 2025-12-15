@@ -103,7 +103,7 @@ dependencies {
     implementation("androidx.localbroadcastmanager:localbroadcastmanager:1.1.0")
     implementation("androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.2")
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.6.2")
-    implementation("androidx.savedstate:savedstate:1.2.0")
+    implementation("androidx.savedstate:savedstate:1.4.0")
 
 
 
