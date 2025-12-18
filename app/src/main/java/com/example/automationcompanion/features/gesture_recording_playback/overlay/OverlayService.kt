@@ -138,7 +138,7 @@ class OverlayService : Service() {
 
     private fun startForegroundServiceWithNotification() {
         val notification = NotificationCompat.Builder(this, NOTIFICATION_CHANNEL_ID)
-            .setContentTitle("My Automation")
+            .setContentTitle("Automation Companion")
             .setContentText("Overlay is running")
             .setSmallIcon(R.drawable.ic_notification)
             .setPriority(NotificationCompat.PRIORITY_LOW)
@@ -492,11 +492,14 @@ class OverlayService : Service() {
 
     private fun updateToggleState(isEditing: Boolean) {
         if (isEditing) {
-            binding.btnToggleInput.setText(R.string.mode_interact)
+            binding.tvToggleLabel.setText(R.string.mode_interact)
+            binding.ivToggleIcon.setImageResource(R.drawable.ic_touch_app)
         } else {
-            binding.btnToggleInput.setText(R.string.mode_edit)
+            binding.tvToggleLabel.setText(R.string.mode_edit)
+            binding.ivToggleIcon.setImageResource(R.drawable.ic_edit)
         }
     }
+
 
     private fun enableSetupMode() {
         ActionManager.startSetupMode()

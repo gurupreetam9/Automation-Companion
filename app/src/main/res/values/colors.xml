@@ -2,7 +2,7 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="marker_color">#FF4081</color>
+    <color name="marker_color">#F8005D</color>
     <color name="overlay_background">#FFFFFF</color>
     <color name="overlay_surface">#FFFFFF</color>
     <color name="overlay_stroke">#22000000</color>

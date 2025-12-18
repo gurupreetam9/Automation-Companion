@@ -22,5 +22,14 @@
     <string name="mode_interact">Interact</string>
     <string name="mode_edit">Edit</string>
     <string name="edit">Edit Loops</string>
+    <string name="preset_saved">Preset Saved!</string>
+    <string name="hold_time_ms">Hold Time (ms):</string>
+    <string name="delay_ms">Delay (ms):</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">OK</string>
+    <string name="set_loop_count">Set Loop Count</string>
+    <string name="number_of_loops">Number of loops</string>
+    <string name="infinite_loop">Infinite Loop (∞)</string>
+    <string name="save">Save</string>
 
 </resources>
