@@ -64,6 +64,6 @@ compose-icons = { group = "androidx.compose.material", name = "material-icons-ex
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
-compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version = "2.2.21" }
+compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version = "2.3.0" }
 kotlin-serialization = { id= "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin"}
 
