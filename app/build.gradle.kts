@@ -95,6 +95,10 @@ dependencies {
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.savedstate)
 
+    //App Specific Automation
+    implementation("com.google.code.gson:gson:2.10.1")
+    implementation(libs.coil.compose)
+
 
 
     testImplementation(libs.junit)
