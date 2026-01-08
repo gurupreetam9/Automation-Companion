@@ -5,6 +5,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.autonion.automationcompanion.features.PlaceholderScreen
+import com.autonion.automationcompanion.features.app_specific_automation.AppSpecificAutomationNavGraph
 import com.autonion.automationcompanion.features.gesture_recording_playback.GestureRecordingScreen
 import com.autonion.automationcompanion.features.system_context_automation.location.SystemContextMainScreen
 
@@ -100,14 +101,8 @@ fun AppNavHost() {
         }
 
         composable(Routes.APP_SPECIFIC) {
-            PlaceholderScreen(
-                title = "System Context Automation",
-                todos = listOf(
-                    "Per-app actions & selectors",
-                    "Test suites for popular apps",
-                    "App capability registry"
-                ),
-                onBack = {navController.popBackStack()}
+            AppSpecificAutomationNavGraph(
+                onExitFeature = { navController.popBackStack() }
             )
         }
 
